@@ -25,7 +25,7 @@
 require_once( '../../config.php' );
 global $CFG, $USER, $DB, $OUTPUT, $PAGE;
 
-$PAGE->set_url('/local/filemanager/index.php');
+$PAGE->set_url(new moodle_url('/local/filemanager/index.php'));
 require_login();
 
 $PAGE->set_pagelayout( 'admin' );

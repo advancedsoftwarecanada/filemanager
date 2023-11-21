@@ -51,5 +51,5 @@ To get started with FileManager, simply follow these steps:
 
 ### Updates
 
-January 21, 2013: Plugin Created for Moodle 2.x.x
-November 21, 2023: Updated plugin for Moodle 4.x.x
+- January 21, 2013: Plugin Created for Moodle 2.x.x
+- November 21, 2023: Updated plugin for Moodle 4.x.x

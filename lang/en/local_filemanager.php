@@ -21,11 +21,5 @@
  * @copyright (C) 2019 onwards Yorkville Education Company
  */
 
-defined('MOODLE_INTERNAL') || die();
 
-$plugin->version   = 2023111000.00;
-$plugin->requires  = 2013051400; // Moodle 2.5.
-$plugin->cron      = 0;
-$plugin->component = 'local_filemanager';
-$plugin->maturity  = MATURITY_STABLE;
-$plugin->release   = '4.4+ (Build: 20231110)';
+$string['pluginname'] = 'File Manager Example';

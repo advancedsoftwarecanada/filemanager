@@ -15,11 +15,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Library file for filemanager demo
- *
- * @package   local_filemanager
- * @copyright 2013 Davo Smith, Synergy Learning
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package local_filemanager
+ * @author Andrew Normore<andrewnormore@gmail.com>
+ * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @copyright (C) 2019 onwards Yorkville Education Company
  */
 
 defined('MOODLE_INTERNAL') || die();

@@ -27,8 +27,8 @@ require_login();
 // the system context (as we are in a 'local' plugin without any other context)
 $context = context_system::instance();
 $PAGE->set_context( $context );
-$PAGE->set_title( 'File Manager Example' );
-$PAGE->set_heading( 'File Manager Example' );
+$PAGE->set_title( 'File Manager: Upload A File' );
+$PAGE->set_heading( 'File Manager Upload A File' );
 
 //DEFINITIONS
 require_once($CFG->libdir.'/formslib.php');

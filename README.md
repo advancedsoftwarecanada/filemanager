@@ -65,7 +65,11 @@ To get started with FileManager, simply follow one of these steps:
    ```bash
    git submodule add https://github.com/advancedsoftwarecanada/filemanager local/filemanager
 
-3. Install directly into your Moodle by downloading the zip and extacting to /var/www/yoursite.com/local/filemanager
+3.
+- Install directly into your Moodle by downloading the zip and extacting to /var/www/yoursite.com/local/filemanager
+- Or access your admin plugins uploader and select the following download
+<br />
+<a href="https://github.com/advancedsoftwarecanada/filemanager/archive/refs/heads/master.zip">Download the current master.zip</a>
 
 ### Updates
 

@@ -26,9 +26,9 @@ if (is_siteadmin()) {
     $ADMIN->add('localplugins', $settings);
 
 	// Dashboard Link
-    $settings->add( new admin_setting_configempty('local_hypercron/local_hypercron',
-            "Dashboard View",
-            "<a target='_blank' href='".$CFG->wwwroot."/local/msm/dashboard.php'>Click Here To View MSM Dashbaord</a>"
+    $settings->add( new admin_setting_configempty('local_filemanager/local_filemanager',
+            "File Manager Example",
+            "<a target='_blank' href='".$CFG->wwwroot."/local/filemanager/index.php'>Open the File Manager Example</a>"
         )
     );
 

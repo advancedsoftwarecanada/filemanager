@@ -1,6 +1,6 @@
 <p align="center">
   <img src="https://advancedsoftware.ca/assets/img/asecc-text-only.png" alt="FileManager Logo">
-  <br />Visit <a href="https://www.AdvanvedSoftware.ca">www.AdvanvedSoftware.ca
+  <br />Visit <a href="https://advancedsoftware.ca/">www.AdvancedSoftware.ca
 </p>
 
 <h1 align="center">FileManager</h1>

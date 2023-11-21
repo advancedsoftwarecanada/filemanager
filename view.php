@@ -11,8 +11,6 @@ global $CFG, $USER, $DB, $OUTPUT, $PAGE;
 $PAGE->set_url('/local/filemanager/index.php');
 require_login();
 
-$PAGE->set_pagelayout( 'admin' );
-
 // Choose the most appropriate context for your file manager - e.g. block, course, course module, this example uses
 // the system context (as we are in a 'local' plugin without any other context)
 // This is VERY important, the filemanager MUST have a valid context!
@@ -41,7 +39,7 @@ echo "<a href='/local/filemanager/index.php'><input type='button' value='Manage 
 echo "<a style='padding-left:10px' href='/local/filemanager/view.php'><input type='button' value='View Files'></a>";
 echo "<br /><br /><br />";
 
-			
+
 // ---------
 // Display Managed Files!
 // ---------
@@ -52,13 +50,13 @@ if ($files = $fs->get_area_files($context->id, 'local_filemanager', 'attachment'
 	foreach ($files as $file) {
 		// Build the File URL. Long process! But extremely accurate.
 		$fileurl = moodle_url::make_pluginfile_url($file->get_contextid(), $file->get_component(), $file->get_filearea(), $file->get_itemid(), $file->get_filepath(), $file->get_filename());
-        // Display the image
-        $download_url = $fileurl->get_port() ? $fileurl->get_scheme() . '://' . $fileurl->get_host() . $fileurl->get_path() . ':' . $fileurl->get_port() : $fileurl->get_scheme() . '://' . $fileurl->get_host() . $fileurl->get_path();
-        echo '<a href="' . $download_url . '">' . $file->get_filename() . '</a><br/>';
+
+		// Display the image
+		echo "<div><img style='width:250px; height:auto;' src='$fileurl' /></div>";
 	}
 } else {
 	echo '<p>Please upload an image first</p>';
 }
-	
-	
+
+
 echo $OUTPUT->footer();

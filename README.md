@@ -60,7 +60,7 @@ To get started with FileManager, simply follow one of these steps:
    ```bash
    git clone https://github.com/advancedsoftwarecanada/filemanager.git
 
-2. Add as a submodile to your current Moodle install
+2. Add as a submodule to your current Moodle install with Git
 
    ```bash
    git submodule add https://github.com/advancedsoftwarecanada/filemanager local/filemanager

@@ -41,6 +41,16 @@ This project serves as an example for basic interactions with Moodle 4.x.x File 
 
 ---
 
+### Screenshots
+
+
+
+<img src="https://advancedsoftware.ca/assets/img/asecc_filemanager_1.png" alt="Screenshot 1">
+<img src="https://advancedsoftware.ca/assets/img/asecc_filemanager_2.png" alt="Screenshot 2">
+<img src="https://advancedsoftware.ca/assets/img/asecc_filemanager_3.png" alt="Screenshot 3">
+
+---
+
 ### Getting Started
 
 To get started with FileManager, simply follow these steps:

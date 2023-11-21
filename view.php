@@ -18,8 +18,8 @@ $context = context_system::instance();
 $PAGE->set_context( $context );
 
 // Setup the page
-$PAGE->set_title( 'File Manager Example' );
-$PAGE->set_heading( 'File Manager Example' );
+$PAGE->set_title( 'File Manager: View Files' );
+$PAGE->set_heading( 'File Manager: View Files' );
 
 //DEFINITIONS
 require_once($CFG->libdir.'/formslib.php');

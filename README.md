@@ -53,12 +53,19 @@ This project serves as an example for basic interactions with Moodle 4.x.x File 
 
 ### Getting Started
 
-To get started with FileManager, simply follow these steps:
+To get started with FileManager, simply follow one of these steps:
 
 1. Clone this repository to your local machine:
 
    ```bash
    git clone https://github.com/advancedsoftwarecanada/filemanager.git
+
+2. Add as a submodile to your current Moodle install
+
+   ```bash
+   git submodule add https://github.com/advancedsoftwarecanada/filemanager local/filemanager
+
+3. Install directly into your Moodle by downloading the zip and extacting to /var/www/yoursite.com/local/filemanager
 
 ### Updates
 

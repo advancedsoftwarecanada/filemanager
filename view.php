@@ -11,8 +11,6 @@ global $CFG, $USER, $DB, $OUTPUT, $PAGE;
 $PAGE->set_url('/local/filemanager/index.php');
 require_login();
 
-$PAGE->set_pagelayout( 'admin' );
-
 // Choose the most appropriate context for your file manager - e.g. block, course, course module, this example uses
 // the system context (as we are in a 'local' plugin without any other context)
 // This is VERY important, the filemanager MUST have a valid context!
@@ -54,7 +52,7 @@ if ($files = $fs->get_area_files($context->id, 'local_filemanager', 'attachment'
 		$fileurl = moodle_url::make_pluginfile_url($file->get_contextid(), $file->get_component(), $file->get_filearea(), $file->get_itemid(), $file->get_filepath(), $file->get_filename());
 
 		// Display the image
-		echo "<br /><img src='$fileurl' />";
+		echo "<div><img style='width:250px; height:auto;' src='$fileurl' /></div>";
 	}
 } else {
 	echo '<p>Please upload an image first</p>';

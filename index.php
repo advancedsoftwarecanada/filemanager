@@ -11,11 +11,6 @@
 // Why? Because file management is incredibly hard for some reason.
 // This file is built to run as STANDALONE, no external files or strings. Just 100% easy to understand! (Noob friendly)
 
-
-
-
-
-
 // --------------
 //
 // Standard Moodle Setup
@@ -24,7 +19,7 @@
 require_once( '../../config.php' );
 global $CFG, $USER, $DB, $OUTPUT, $PAGE;
 
-$PAGE->set_url(new moodle_url('/local/filemanager/index.php'));
+$PAGE->set_url('/local/filemanager/index.php');
 require_login();
 
 $PAGE->set_pagelayout( 'admin' );
@@ -39,16 +34,10 @@ $PAGE->set_heading( 'Page Heading' );
 //DEFINITIONS
 require_once($CFG->libdir.'/formslib.php');
 
-
-
-
-
-
-
 // ===============
 //
 //
-// PAGE LOGIC
+//	(LIBRARY) this would usually be in an: require('lib.php');
 //
 //
 // ===============
@@ -94,7 +83,6 @@ $mform = new simplehtml_form(null, $customdata);
 
 
 // CONFIGURE FILE MANAGER
-// ---------
 // From http://docs.moodle.org/dev/Using_the_File_API_in_Moodle_forms#filemanager
 $itemid = 0; // This is used to distinguish between multiple file areas, e.g. different student's assignment submissions, or attachments to different forum posts, in this case we use '0' as there is no relevant id to use
 
@@ -109,7 +97,6 @@ $entry->attachments = $draftitemid; // Add the draftitemid to the form, so that 
 
 
 // Set form data
-// This will load the file manager with your previous files
 $mform->set_data($entry);
 
 
@@ -123,15 +110,10 @@ $mform->set_data($entry);
 // ===============
 echo $OUTPUT->header();
 
-echo "<a href='/local/filemanager/index.php'><input type='button' value='Manage Files'></a>";
-echo "<a style='padding-left:10px' href='/local/filemanager/view.php'><input type='button' value='View Files'></a>";
 
 // ----------
 // Form Submit Status
 // ----------
-if ($mform->is_cancelled()) {
-    // CANCELLED
-    echo '<h1>Cancelled</h1>';
 
 if ($mform->is_cancelled()) {
     // CANCELLED
@@ -176,4 +158,3 @@ if ($mform->is_cancelled()) {
 
 
 echo $OUTPUT->footer();
-

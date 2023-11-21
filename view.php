@@ -41,7 +41,7 @@ echo "<a href='/local/filemanager/index.php'><input type='button' value='Manage 
 echo "<a style='padding-left:10px' href='/local/filemanager/view.php'><input type='button' value='View Files'></a>";
 echo "<br /><br /><br />";
 
-			
+
 // ---------
 // Display Managed Files!
 // ---------
@@ -52,13 +52,13 @@ if ($files = $fs->get_area_files($context->id, 'local_filemanager', 'attachment'
 	foreach ($files as $file) {
 		// Build the File URL. Long process! But extremely accurate.
 		$fileurl = moodle_url::make_pluginfile_url($file->get_contextid(), $file->get_component(), $file->get_filearea(), $file->get_itemid(), $file->get_filepath(), $file->get_filename());
-        // Display the image
-        $download_url = $fileurl->get_port() ? $fileurl->get_scheme() . '://' . $fileurl->get_host() . $fileurl->get_path() . ':' . $fileurl->get_port() : $fileurl->get_scheme() . '://' . $fileurl->get_host() . $fileurl->get_path();
-        echo '<a href="' . $download_url . '">' . $file->get_filename() . '</a><br/>';
+
+		// Display the image
+		echo "<br /><img src='$fileurl' />";
 	}
 } else {
 	echo '<p>Please upload an image first</p>';
 }
-	
-	
+
+
 echo $OUTPUT->footer();

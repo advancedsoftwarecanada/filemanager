@@ -18,7 +18,7 @@
  * @package local_filemanager
  * @author Andrew Normore<andrewnormore@gmail.com>
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @copyright (C) 2019 onwards Yorkville Education Company
+ * @copyright (C) 2019 onwards Advanced Software Engineering Corporation of Canada
  */
 
 
